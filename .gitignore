@@ -1,2 +1,4 @@
-./src/laravel/*
-./src/sites-available/*
+/src/laravel/*
+!/src/laravel/.gitkeep
+/src/apache2/*
+!/src/apache2/.gitkeep
