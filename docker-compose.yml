@@ -8,6 +8,6 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./src/www/laravel:/var/www/laravel
-      #- ./src/default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./src/laravel:/var/www/laravel
+      - ./src/sites-available:/etc/apache2/sites-available
 
