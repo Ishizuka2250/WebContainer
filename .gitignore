@@ -1,4 +1,6 @@
-/src/laravel/*
-!/src/laravel/.gitkeep
+/src/www/*
+!/src/www/laravel/.gitkeep
 /src/apache2/*
 !/src/apache2/.gitkeep
+/mysql/data/*
+!/mysql/data/.gitkeep

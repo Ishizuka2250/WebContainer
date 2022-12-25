@@ -10,4 +10,14 @@ services:
     volumes:
       - ./src/www:/var/www
       - ./src/apache2:/etc/apache2
-
+  
+  db:
+    image: mysql:5.7
+    container_name: mysql-server
+    environment:
+      - TZ='Asia/Tokyo'
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - 3306:3306
